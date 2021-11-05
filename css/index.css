@@ -1,4 +1,4 @@
-* {
+﻿* {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     outline: none;
@@ -14,6 +14,7 @@ body {
     linear-gradient(139.19deg, #2B0300 63.14%, #270401 85.73%);
 
 }
+
 a {
     cursor: pointer;
     text-decoration: none;
