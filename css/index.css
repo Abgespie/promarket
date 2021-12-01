@@ -1883,9 +1883,6 @@ input[type="checkbox"]:disabled + label:before {
     .header-top {
         padding-right: 0;
     }
-    .header-top-left {
-        /* flex-direction: column; */
-    }
     .header-top-left__text {
         margin-left: 20px;
     }
@@ -1933,4 +1930,192 @@ input[type="checkbox"]:disabled + label:before {
     .header-autor {
         margin-left: -150px;
     }
+}
+@media (max-width: 991px) {
+    .header-top-right {
+        margin-right: -50px;
+    }
+    .header-top-right__phonenum {
+        font-size: 18px;
+        width: 109%;
+    }
+    .header-top-left__text {
+        max-width: 230px;
+    }
+    .header-main__title {
+        width: 120%;
+        font-size: 28px;
+    }
+    .header-main__text {
+        font-size: 15px;
+    }
+    .header-autor {
+        margin-left: -50px;
+    }
+    .header-autor-desc {
+        top: 54%;
+        left: -130%;
+    }
+    .header-bottom-desc {
+        font-size: 18px;
+        margin-right: -50px;
+    }
+}
+@media (max-width: 906px) {
+    .header-autor {
+        margin-left: -150px;
+    }
+    .header-bottom__title {
+        font-size: 34px;
+    }
+    .header-bottom-desc {
+        font-size: 16px;
+    }
+}
+@media (max-width: 808px) {
+    .header-top {
+        padding-left: 50px;
+    }
+    .header-main {
+        margin-left: 50px;
+    }
+    .header-autor {
+        margin-left: -190px;
+    }
+    .header-bottom-desc {
+        font-size: 16px;
+        margin-right: 0;
+    }
+}
+@media (max-width: 767px) {
+    .header-main {
+        margin-left: 100px;
+    }
+    .header-main__button--text {
+        padding: 20px 40px 20px 40px;
+    }
+    .header-autor {
+        margin-left: -50px;
+        top: -30%;
+    }
+    .header-autor-desc {
+        left: -20px;
+        top: 48%;
+        max-width: 200px;
+    }
+    .header-autor__desc--title {
+        font-size: 20px;
+    }
+    .header-autor__img {
+        max-width: 330px;
+    }
+    .header-bottom {
+        margin-top: -20px;
+    }
+    .header-bottom__title {
+        margin-top: 35px;
+        margin-left: 45px;
+        font-size: 25px;
+    }
+    .header-bottom-desc:first-child {
+        margin-top: -15px;
+    }
+    .header__cracker {
+        display: none;
+    }
+}
+@media (max-width: 649px) {
+    .header-main {
+        margin-left: 50px;
+        margin-right: 30px;
+    }
+}
+@media (max-width: 584px) {
+    .header-top {
+        padding-left: 30px;
+        /* justify-content: left; */
+        flex-direction: column;
+    }
+    .header-top-left {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding-right: 30px;
+    }
+    .header-top-right {
+        max-width: 140px;
+        margin-left: 30px;
+    }
+    .header-main {
+        margin-left: 30px;
+    }
+}
+@media (max-width: 530px) {
+    .header-main__title {
+        max-width: 99%;
+    }
+    .header-autor__desc--title {
+        font-size: 16px;
+    }
+    .header-autor__desc--text {
+        font-size: 13px;
+        max-width: 150px;
+    }
+}
+@media (max-width: 450px) {
+    .header-left {
+        padding-left: 0;
+    }
+    .header-top-left__text {
+        margin-left: 0;
+    }
+    .header-top-left--logo__logo {
+        margin-left: 20px;
+    }
+    .header-top-left--logo__text {
+        font-size: 12px;
+        text-align: center;
+    }
+    .header-top-right {
+        align-items: flex-start;
+        margin-left: 0;
+    }
+    .header-top-right__phonenum {
+        font-size: 15px;
+    }
+    .header-autor-desc {
+        top: 55%;
+        left: -60px;
+    }
+    .header-bottom__title {
+        margin-left: 0;
+    }
+    .header-bottom-desc {
+        margin-left: 30px;
+    }
+}
+
+
+/* invest */
+
+@media (max-width: 1889px) {
+    .invests__chair {
+        display: none;
+    }
+}
+@media (max-width: 1440px) {
+    .invest .container {
+        margin-left: 30px;
+    }
+    .invest-lose {
+        transform: translate(0px, 160px);
+    }
+    .invest__autor {
+        left: 50%;
+    }
+    .invest__arrow {
+        left: 60%;
+    }
+}
+@media (max-width: 1199px) {
+
 }
