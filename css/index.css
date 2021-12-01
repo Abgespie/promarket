@@ -2117,5 +2117,106 @@ input[type="checkbox"]:disabled + label:before {
     }
 }
 @media (max-width: 1199px) {
-
+    .invest-title {
+        font-size: 34px;
+    }
+    .invest__autor {
+        top: 10%;
+        max-width: 700px;
+    }
+    .invest__money--fire {
+        max-width: 600px;
+        transform: translateY(296px);
+        left: 41%;
+    }
+    .invest__arrow {
+        display: none;
+    }
+    .invest-lose {
+        margin-top: 30px;
+        max-width: 700px;
+        transform: translate(0px, 0px);
+    }
+}
+@media (max-width: 1079px) {
+    .invest__autor {
+        top: 11%;
+        left: 55%;
+        max-width: 520px;
+    }
+}
+@media (max-width: 869px) {
+    .invest-lose {
+        margin-bottom: 300px;
+    }
+    .invest__autor {
+        top: 12%;
+        left: 44%;
+    }
+    .invest__money--fire {
+        max-width: 480px;
+        transform: none;
+        top: 15%;
+        left: 12%;
+    }
+}
+@media (max-width: 767px) {
+    .invest .mycont {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .invest__autor {
+        top: 14%;
+        left: 36%;
+    }
+    .invest__money--fire {
+        max-width: 410px;
+        top: 17%;
+    }
+    .invest-lose {
+        min-width: 600px;
+        margin-bottom: 400px;
+    } 
+}
+@media (max-width: 699px) {
+    .invest-lose {
+        min-width: 550px;
+    }
+}
+@media (max-width: 599px) {
+    .invest-lose {
+        min-width: 300px;
+    }
+    .invest__autor {
+        left: 19%;
+    }
+    .invest__money--fire {
+        left: -5%;
+    }
+}
+@media (max-width: 457px) {
+    .invest__autor {
+        left: 7%;
+        max-width: 450px;
+        top: 15%
+    }
+}
+@media (max-width: 370px) {
+    .invest-deposit-desc__bank {
+        max-width: 100px;
+    }
+}
+@media (max-width: 340px) {
+    .invest-deposit-desc-text {
+        margin-left: 5px;
+    }
+    .invest__autor {
+        left: 0;
+        max-width: 400px;
+        top: 15.5%
+    }
+    .invest__money--fire {
+        left: -11%;
+        top: 17.5%;
+    }
 }
