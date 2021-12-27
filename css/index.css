@@ -696,6 +696,8 @@ main {
     max-width: 200px;
 }
 .wish__title {
+    position: relative;
+    z-index: 2;
     margin-top: 100px;
     font-weight: 900;
     font-size: 48px;
@@ -704,6 +706,10 @@ main {
 }
 .wish__title--red {
     color: #C61508;
+}
+.wish-desc {
+    position: relative;
+    z-index: 2;
 }
 .wish-desc-el {
     display: flex;
@@ -2103,6 +2109,9 @@ input[type="checkbox"]:disabled + label:before {
     }
 }
 @media (max-width: 1440px) {
+    .invest-title__text {
+        font-size: 42px;
+    }
     .invest .container {
         margin-left: 30px;
     }
@@ -2117,6 +2126,9 @@ input[type="checkbox"]:disabled + label:before {
     }
 }
 @media (max-width: 1199px) {
+    .invest-title__text {
+        font-size: 34px;
+    }
     .invest-title {
         font-size: 34px;
     }
@@ -2168,6 +2180,7 @@ input[type="checkbox"]:disabled + label:before {
     .invest__autor {
         top: 14%;
         left: 36%;
+        z-index: 0;
     }
     .invest__money--fire {
         max-width: 410px;
@@ -2220,3 +2233,297 @@ input[type="checkbox"]:disabled + label:before {
         top: 17.5%;
     }
 }
+
+
+/* investcont */
+
+@media (max-width: 1440px) {
+    .investcont__title {
+        font-size: 42px;
+    }
+}
+@media (max-width: 1399px) {
+    .investcont__title {
+        font-size: 42px;
+    }
+}
+@media (max-width: 1399px) {
+    .investcont-time-card-content__text {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1199px) {
+    .investcont__fire {
+        display: none;
+    }
+    .investcont__title {
+        font-size: 34px;
+    }
+}
+@media (max-width: 991px) {
+    .investcont__explosion {
+        position: relative;
+        max-width: 1000px;
+        margin-bottom: -300px;
+    }
+    .investcont-time-card {
+        transform: translateX(0px);
+    }
+}
+@media (max-width: 598px) {
+    .investcont-content {
+        transform: translateX(0px);
+        max-width: 100%;
+    }
+    .investcont__explosion {
+        max-width: 700px;
+        margin-bottom: -250px;
+    }
+}
+@media (max-width: 598px) {
+    .investcont__explosion {
+        max-width: 500px;
+        margin-bottom: -200px;
+    }
+}
+
+
+/* who-is */
+
+@media (max-width: 1779px) {
+    .whois__tickets {
+        display: none;
+    }
+}
+@media (max-width: 1440px) {
+    .whois__title {
+        font-size: 42px;
+    }
+}
+@media (max-width: 1399px) {
+    .whois__autor {
+        max-width: 700px;
+    }
+}
+@media (max-width: 1199px) {
+    .whois__title {
+        font-size: 34px;
+    }
+    .whois__autor {
+        max-width: 600px;
+    }
+}
+@media (max-width: 1024px) {
+    .whois__autor {
+        max-width: 500px;
+    }
+}
+@media (max-width: 991px) {
+    .whois__autor {
+        max-width: 450px;
+    }
+}
+@media (max-width: 787px) {
+    .whois__autor {
+        position: relative;
+        left: 46%;
+        margin-bottom: -250px;
+    }
+}
+@media (max-width: 719px) {
+    .whois__autor {
+        left: 38%;
+    }
+}
+@media (max-width: 609px) {
+    .whois__autor {
+        left: 27%;
+    }
+}
+@media (max-width: 518px) {
+    .whois__autor {
+        left: 14%;
+    }
+}
+@media (max-width: 453px) {
+    .whois__autor {
+        left: 2%;
+    }
+}
+@media (max-width: 409px) {
+    .whois-button-content__case {
+        display: none;
+    }
+    .whois__autor {
+        left: 15%;
+        max-width: 350px;
+    }
+}
+@media (max-width: 349px) {
+    .whois__autor {
+        left: 0;
+    }
+}
+
+/* wish */
+
+@media (max-width: 1779px) {
+    .wish__autor, .wish__boster  {
+        max-width: 800px;
+    }
+}
+@media (max-width: 1579px) {
+    .wish__autor, .wish__boster  {
+        max-width: 670px;
+    }
+}
+@media (max-width: 1440px) {
+    .wish__title {
+        font-size: 42px;
+    }
+    .wish__autor {
+        transform: translateY(300px);
+    }
+}
+@media (max-width: 1199px) {
+    .wish__title {
+        font-size: 34px;
+    }
+    .wish__boster {
+        max-width: 550px;
+    }
+}
+@media (max-width: 1024px) {
+    .wish {
+        padding-bottom: 700px;
+    }
+    .wish_spark--left {
+        transform: translateY(-1195px);
+    }
+    .wish__autor {
+        transform: translateY(500px);
+    }
+    .wish__boster {
+        transform: translateY(-350px);
+    }
+    .wish__oscar {
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+    .wish {
+        padding-bottom: 800px;
+    }
+    .wish__autor {
+        transform: translateY(600px);
+    }
+    .wish__boster {
+        max-width: 400px;
+        transform: translateY(-550px);
+    }
+}
+@media (max-width: 768px) {
+    .wish_spark--left {
+        display: none;
+    }
+    .wish__boster {
+        transform: translateY(-625px);
+    }
+
+}
+@media (max-width: 609px) {
+    .wish {
+        padding-bottom: 900px;
+    }
+    .wish__autor {
+        transform: translateY(700px);
+    }
+    .wish__boster {
+        transform: translateY(-700px);
+    }
+}
+@media (max-width: 496px) {
+    .wish {
+        padding-bottom: 700px;
+    }
+    .wish__autor {
+        max-width: 540px;
+    }
+    .wish__boster {
+        transform: translateY(-505px);
+    }
+    .wish-desc-el__img--coins {
+        max-height: 81px;
+        margin-top: 30px;
+        width: auto;
+    }
+    .wish-desc-el__img--car {
+        max-height: 74px;
+        margin-top: 30px;
+        width: auto;
+    }
+    .wish-desc-el__img--money-tree {
+        max-height: 89px;
+        width: auto;
+    }
+}
+@media (max-width: 425px) {
+    .wish__boster {
+        max-width: 300px;
+    }
+}
+@media (max-width: 366px) {
+    .wish__autor {
+        transform: translateY(800px);
+        max-width: 435px;
+    }
+}
+
+
+/* course */
+
+@media (max-width: 1799px) {
+    .course__oscar {
+        max-height: 600px;
+    }
+    .course__fire {
+        max-height: 900px;
+    }
+}
+@media (max-width: 1440px) {
+    .course__title-upper {
+        font-size: 42px;
+    }
+    .course__oscar {
+        max-height: 500px;
+    }
+}
+@media (max-width: 1199px) {
+    .course__oscar {
+        display: none;
+    }
+    .course__fire {
+        display: none;
+    }
+    .course__title-upper, .course__title-lower {
+        margin-left: 17%;
+    }
+}
+@media (max-width: 991px) {
+    .course__title-upper {
+        font-size: 34px;
+    }
+    .course-bullets-el-button {
+        right: 10px;
+    }
+}
+@media (max-width: 575px) {
+    .course-bullets, .course__title-lower, .course__title-upper {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+/* game */
+
