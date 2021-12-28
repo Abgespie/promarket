@@ -93,52 +93,64 @@ $('.reviews-slider__arrowPrev').on('click', function() {
         $('.reviews-slider__dots').removeClass("reviews-slider--up3");
         $('.reviews-slider__dots').removeClass("reviews-slider--up4");
 
-        $('.reviews-slider__arrowPrev').addClass("reviews-slider__arrowPrev--down");
-        $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up3");
-        $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up4");
+        let arrw = window.innerWidth;
+        if (arrw > 991) {
+            $('.reviews-slider__arrowPrev').addClass("reviews-slider__arrowPrev--down");
+            $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up3");
+            $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up4");
 
-        $('.reviews-slider__arrowNext').addClass("reviews-slider__arrowNext--down");
-        $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up3");
-        $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up4");
+            $('.reviews-slider__arrowNext').addClass("reviews-slider__arrowNext--down");
+            $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up3");
+            $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up4");
+        }
     }
     else if ($(thisLi).attr('id') == 'slick-slide03') {
         $('.reviews-slider__dots').addClass("reviews-slider--up3");
         $('.reviews-slider__dots').removeClass("reviews-slider--down");
         $('.reviews-slider__dots').removeClass("reviews-slider--up4");
 
-        $('.reviews-slider__arrowPrev').addClass("reviews-slider__arrowPrev--up3");
-        $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--down");
-        $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up4");
+        let arrw = window.innerWidth;
+        if (arrw > 991) {
+            $('.reviews-slider__arrowPrev').addClass("reviews-slider__arrowPrev--up3");
+            $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--down");
+            $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up4");
 
-        $('.reviews-slider__arrowNext').addClass("reviews-slider__arrowNext--up3");
-        $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--down");
-        $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up4");
+            $('.reviews-slider__arrowNext').addClass("reviews-slider__arrowNext--up3");
+            $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--down");
+            $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up4");
+        }
     }
     else if ($(thisLi).attr('id') == 'slick-slide04') {
         $('.reviews-slider__dots').addClass("reviews-slider--up4");
         $('.reviews-slider__dots').removeClass("reviews-slider--down");
         $('.reviews-slider__dots').removeClass("reviews-slider--up3");
 
-        $('.reviews-slider__arrowPrev').addClass("reviews-slider__arrowPrev--up4");
-        $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--down");
-        $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up3");
+        let arrw = window.innerWidth;
+        if (arrw > 991) {
+            $('.reviews-slider__arrowPrev').addClass("reviews-slider__arrowPrev--up4");
+            $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--down");
+            $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up3");
 
-        $('.reviews-slider__arrowNext').addClass("reviews-slider__arrowNext--up4");
-        $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--down");
-        $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up3");
+            $('.reviews-slider__arrowNext').addClass("reviews-slider__arrowNext--up4");
+            $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--down");
+            $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up3");
+        }
     }
     else {
         $('.reviews-slider__dots').removeClass("reviews-slider--down");
         $('.reviews-slider__dots').removeClass("reviews-slider--up3");
         $('.reviews-slider__dots').removeClass("reviews-slider--up4");
 
-        $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--down");
-        $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up3");
-        $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up4");
+        let arrw = window.innerWidth;
+        if (arrw > 991) {
+            $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--down");
+            $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up3");
+            $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up4");
 
-        $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--down");
-        $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up3");
-        $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up4");
+            $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--down");
+            $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up3");
+            $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up4");
+        }
     }
 });
 $('.reviews-slider__arrowNext').on('click', function() {
@@ -148,52 +160,64 @@ $('.reviews-slider__arrowNext').on('click', function() {
         $('.reviews-slider__dots').removeClass("reviews-slider--up3");
         $('.reviews-slider__dots').removeClass("reviews-slider--up4");
 
-        $('.reviews-slider__arrowPrev').addClass("reviews-slider__arrowPrev--down");
-        $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up3");
-        $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up4");
+        let arrw = window.innerWidth;
+        if (arrw > 991) {
+            $('.reviews-slider__arrowPrev').addClass("reviews-slider__arrowPrev--down");
+            $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up3");
+            $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up4");
 
-        $('.reviews-slider__arrowNext').addClass("reviews-slider__arrowNext--down");
-        $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up3");
-        $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up4");
+            $('.reviews-slider__arrowNext').addClass("reviews-slider__arrowNext--down");
+            $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up3");
+            $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up4");
+        }
     }
     else if ($(thisLi).attr('id') == 'slick-slide03') {
         $('.reviews-slider__dots').addClass("reviews-slider--up3");
         $('.reviews-slider__dots').removeClass("reviews-slider--down");
         $('.reviews-slider__dots').removeClass("reviews-slider--up4");
 
-        $('.reviews-slider__arrowPrev').addClass("reviews-slider__arrowPrev--up3");
-        $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--down");
-        $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up4");
+        let arrw = window.innerWidth;
+        if (arrw > 991) {
+            $('.reviews-slider__arrowPrev').addClass("reviews-slider__arrowPrev--up3");
+            $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--down");
+            $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up4");
 
-        $('.reviews-slider__arrowNext').addClass("reviews-slider__arrowNext--up3");
-        $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--down");
-        $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up4");
+            $('.reviews-slider__arrowNext').addClass("reviews-slider__arrowNext--up3");
+            $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--down");
+            $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up4");
+        }
     }
     else if ($(thisLi).attr('id') == 'slick-slide04') {
         $('.reviews-slider__dots').addClass("reviews-slider--up4");
         $('.reviews-slider__dots').removeClass("reviews-slider--down");
         $('.reviews-slider__dots').removeClass("reviews-slider--up3");
 
-        $('.reviews-slider__arrowPrev').addClass("reviews-slider__arrowPrev--up4");
-        $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--down");
-        $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up3");
+        let arrw = window.innerWidth;
+        if (arrw > 991) {
+            $('.reviews-slider__arrowPrev').addClass("reviews-slider__arrowPrev--up4");
+            $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--down");
+            $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up3");
 
-        $('.reviews-slider__arrowNext').addClass("reviews-slider__arrowNext--up4");
-        $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--down");
-        $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up3");
+            $('.reviews-slider__arrowNext').addClass("reviews-slider__arrowNext--up4");
+            $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--down");
+            $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up3");
+        }
     }
     else {
         $('.reviews-slider__dots').removeClass("reviews-slider--down");
         $('.reviews-slider__dots').removeClass("reviews-slider--up3");
         $('.reviews-slider__dots').removeClass("reviews-slider--up4");
 
-        $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--down");
-        $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up3");
-        $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up4");
+        let arrw = window.innerWidth;
+        if (arrw > 991) {
+            $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--down");
+            $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up3");
+            $('.reviews-slider__arrowPrev').removeClass("reviews-slider__arrowPrev--up4");
 
-        $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--down");
-        $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up3");
-        $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up4");
+            $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--down");
+            $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up3");
+            $('.reviews-slider__arrowNext').removeClass("reviews-slider__arrowNext--up4");
+        }
     }
 });
 

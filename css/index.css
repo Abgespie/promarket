@@ -2527,3 +2527,184 @@ input[type="checkbox"]:disabled + label:before {
 
 /* game */
 
+@media (max-width: 1799px) {
+    .game__explosion {
+        z-index: 0;
+    }
+    .game-desc--bottom {
+        position: relative;
+        z-index: 2;
+    }
+}
+@media (max-width: 1440px) {
+    .game__autor {
+        max-width: 700px;
+    }
+    .game__title {
+        font-size: 42px;
+    }
+}
+@media (max-width: 1199px) {
+    .game__autor {
+        max-width: 400px;
+        transform: translateY(200px);
+    }
+    .game__explosion {
+        display: none;
+    }
+    .game__title {
+        font-size: 34px;
+    }
+    .game-desc--top {
+        position: relative;
+        z-index: 3;
+    }
+}
+@media (max-width: 991px) {
+    .game__autor {
+        display: none;
+    }
+    .card-bullets {
+        flex-direction: column;
+    }
+}
+@media (max-width: 767px) {
+    .game-card {
+        max-height: none;
+    }
+}
+@media (max-width: 519px) {
+    .game__arrow {
+        display: none;
+    }
+}
+@media (max-width: 367px) {
+    .game-button {
+        padding: 33px 60px 30px 60px;
+    }
+}
+
+
+/* rewviews */
+
+@media (max-width: 1799px) {
+    .reviews-slider__arrowPrev {
+        left: -75px;
+    }
+    .reviews-slider__arrowNext {
+        right: -75px;
+    }
+}
+@media (max-width: 1440px) {
+    .reviews__title {
+        font-size: 42px;
+    }
+    .reviews-slider__arrowPrev {
+        left: -150px;
+    }
+    .reviews-slider__arrowNext {
+        right: -150px;
+    }
+}
+@media (max-width: 1199px) {
+    .reviews__title {
+        font-size: 34px;
+    }
+    .reviews-slider__arrowPrev {
+        left: -200px;
+    }
+    .reviews-slider__arrowNext {
+        right: -200px;
+    }
+}
+@media (max-width: 991px) {
+    .reviews-slider-slide {
+        max-width: 730px;
+    }
+    .reviews-slider__arrowPrev {
+        left: -120px;
+        top: -235px;
+    }
+    .reviews-slider__arrowNext {
+        right: -120px;
+        top: -235px;
+    }
+}
+@media (max-width: 767px)  {
+    .reviews-slider-slide {
+        max-width: 515px;
+    }
+    .reviews-slider__dots  {
+        transform: translate(32%, -752px);
+    }
+}
+@media (max-width: 599px) {
+    .reviews-slider__arrowPrev {
+        left: -110px;
+    }
+    .reviews-slider__arrowNext {
+        right: -110px;
+    }
+    .reviews-slider__arrowPrev, .reviews-slider__arrowNext {
+        width: 50px;
+        height: 50px;
+    }
+    .reviews-slider__arrowNext--img, .reviews-slider__arrowPrev--img {
+        margin-top: 15px;
+        margin-left: 12px;
+    }
+    .reviews__title {
+        font-size: 30px;
+    }
+}
+@media (max-width: 519px) {
+    .reviews-slider-slide {
+        max-width: 319px;
+    }
+    .reviews-slider__arrowPrev {
+        left: -70px;
+    }
+    .reviews-slider__arrowNext {
+        right: -70px;
+    }
+    .reviews-slider__dots  {
+        transform: translate(27%, -1282px);
+    }
+    .reviews__title {
+        max-width: 320px;
+        margin-left: 80px;
+    }
+}
+@media (max-width: 468px) {
+    .reviews__title {
+        margin-left: 60px;
+    }
+}
+@media (max-width: 424px) {
+    .reviews__title {
+        margin-left: 30px;
+    }
+}
+@media (max-width: 379px) {
+    .reviews__title {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 330px) {
+    .reviews__title {
+        margin-left: 0px;
+    }
+}
+
+
+/* tariff */
+
+
+
+
+/* questions */
+
+
+
+
+/* morequests */
