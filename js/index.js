@@ -238,3 +238,36 @@ $(".questions-bullets-el-title__button").on("click", function () {
     }
 });
 
+// invest scroll
+
+$('.header-main__button').on('click', function() {
+    $("html, body").animate({
+        scrollTop: 10550
+    }, "slow");
+});
+$('.whois-button').on('click', function() {
+    $("html, body").animate({
+        scrollTop: 10550
+    }, "slow");
+});
+$('.game-button').on('click', function() {
+    $("html, body").animate({
+        scrollTop: 10550
+    }, "slow");
+});
+$('.questions-card-content-button').on('click', function() {
+    $("html, body").animate({
+        scrollTop: 10550
+    }, "slow");
+});
+
+// call
+
+$(".header-top-right__order").on("click", function() {
+    $('body').addClass("body--nonscroll");
+    $('.call').removeClass("call--hidden");
+    });
+    $(".call-close").on("click", function() {
+        $('body').removeClass("body--nonscroll");
+        $('.call').addClass("call--hidden");
+        });

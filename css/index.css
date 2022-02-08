@@ -33,6 +33,138 @@ main {
     linear-gradient(101.96deg, rgba(31, 43, 75, 0.2) 67.96%, #050A15 87.96%), 
     linear-gradient(139.19deg, #2B0300 63.14%, #270401 85.73%);
 }
+.body--nonscroll {
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+
+/* call */
+
+.call {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease;
+
+}
+.call-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    transition: all 0.6s ease;
+}
+.call--hidden {
+    display: none;
+}
+.call-box {
+    position: relative;
+    z-index: 2;
+    background: radial-gradient(62.22% 62.22% at 50% 0%, rgba(198, 21, 8, 0.2) 0%, rgba(198, 21, 8, 0) 100%), #121212;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    box-sizing: border-box;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+
+    opacity: 1;
+    padding: 40px 34px;
+    max-height: 620px;
+}
+.call-box__title--upper {
+    font-style: normal;
+    font-weight: 999;
+    font-size: 42px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.call-box__title--lower {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #C61508;
+}
+.call-hr {
+    opacity: 0.1;
+    margin: 30px -35px;
+    max-width: 640px;
+    height: 0px;
+    border-top: 1px solid grey;
+}
+.call-box__choose {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 120%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.call-close {
+    position: absolute;
+    z-index: 100;
+    top: -40px;
+    right: -40px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+.call-box-choises {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.call-box-choises-phone {
+    border: 1px solid #FF9900;
+    box-shadow: 0px 10px 25px rgba(255, 153, 0, 0.3), inset 0px -15px 20px rgba(202, 223, 255, 0.15);
+    border-radius: 12px;
+    padding: 20px 40px;
+}
+.call-box-choises-telegram {
+    border: 1px solid #0088CC;
+    box-sizing: border-box;
+    box-shadow: inset 0px -15px 20px rgba(202, 223, 255, 0.15);
+    filter: drop-shadow(0px 10px 25px rgba(0, 136, 204, 0.3));
+    border-radius: 12px;
+    padding: 20px 40px;
+}
+.call-box-choises-whatsup {
+    border: 1px solid #43D854;
+    box-sizing: border-box;
+    box-shadow: inset 0px -15px 20px rgba(202, 223, 255, 0.15);
+    filter: drop-shadow(0px 10px 25px rgba(67, 216, 84, 0.3));
+    border-radius: 12px;
+    padding: 20px 40px;
+}
+.call-box-choises-phone--img {
+    
+}
+.call-box__form {
+    width: 100%;
+    height: 74px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+
+
 
 /* header */
 
@@ -1235,6 +1367,7 @@ main {
 }
 .tariff-bottom__img {
     position: absolute;
+    z-index: 0;
     max-width: 1920px;
     transform: translateY(-650px);
 }
@@ -1283,6 +1416,7 @@ main {
     display: flex;
     flex-direction: row;
     position: absolute;
+    z-index: 2;
     top: 0;
     right: 0;
     transform: translate(-300px, 500px);
@@ -2989,3 +3123,46 @@ input[type="checkbox"]:disabled + label:before {
 
 /* morequests */
 
+@media (max-width: 1440px) {
+    .morequests-content__title {
+        font-size: 42px;
+    }
+}
+@media (max-width: 1399px) {
+    .morequests-form {
+        transform: translate(265px, 100px);
+    }
+}
+@media (max-width: 1199px) {
+    .morequests-content__title {
+        font-size: 34px;
+    }
+}
+@media (max-width: 1099px) {
+    .morequests-form {
+        transform: translate(25px, 100px);
+    }
+}
+@media (max-width: 767px) {
+    .morequests-form {
+        transform: translate(0px, 100px);
+        margin: 0 auto;
+    }
+    .morequests {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .morequests-content-button {
+        max-width: 364px;
+        padding: 30px 100px;
+    }
+}
+@media (max-width: 475px) {
+    .morequests-form {
+        padding: 20px 15px 20px 15px;
+    }
+    .morequests-content-button {
+        padding: 30px 50px;
+    }
+}
