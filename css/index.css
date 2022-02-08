@@ -12,7 +12,6 @@ body {
     background: linear-gradient(277.66deg, rgba(31, 43, 75, 0.2) 62.43%, #050A15 99.58%), 
     linear-gradient(101.96deg, rgba(31, 43, 75, 0.2) 67.96%, #050A15 87.96%), 
     linear-gradient(139.19deg, #2B0300 63.14%, #270401 85.73%);
-
 }
 a {
     cursor: pointer;
@@ -1201,6 +1200,10 @@ main {
 
 /* tariff */
 
+.tariff-complects--mobile {
+    display: none;
+}
+
 .tariff {
     position: relative;
     overflow: hidden;
@@ -1408,6 +1411,130 @@ main {
     color: #C61508;
 }
 
+
+.tariff-complects--mobile-complect {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+}
+.tariff-complects--mobile-complect-base {
+    border: 6px solid #C61508;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 320px;
+    padding: 0px 32px;
+    position: relative;
+}
+.tariff-complects--mobile-complect__desc--base:not(:last-child) {
+    margin-bottom: 85px;
+}
+.tariff-complects--mobile-complect-base__desc {
+    max-width: 224px;
+    padding-left: 20px;
+}
+.tariff-complects--mobile-complect-base-bottom {
+    position: absolute;
+    bottom: 0;
+}
+.tariff-complects--mobile-complect-standart {
+    border: 6px solid #08C610;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 320px;
+    margin-left: 13px;
+    padding: 0px 32px;
+}
+.tariff-complects--mobile-complect-base__desc,
+.tariff-complects--mobile-complect-standart__desc {
+    font-style: normal;
+    font-weight: 999;
+    font-size: 22px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.tariff-complects--mobile-complect-base-price__desc, .tariff-complects--mobile-complect-standart-price__desc {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+.tariff-complects--mobile-complect-base-price__price, .tariff-complects--mobile-complect-standart-price__price {
+    font-weight: 900;
+    font-size: 29px;
+    margin-top: -10px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.tariff-complects--mobile-complect-base-book-button {
+    position: relative;
+    z-index: 4;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    background: linear-gradient(180deg, #C61508 0%, #C61508 0.01%, #940606 100%);
+    box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
+    border-radius: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    transition: all 0.6s ease;
+    padding: 30px 11px;
+}
+.tariff-complects--mobile-complect-standart-closed {
+    position: relative;
+    z-index: 4;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    background: #370400;
+    border-radius: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    padding: 30px 30px;
+    cursor:not-allowed;
+}
+.tariff-complects--mobile-complect-base-instal, .tariff-complects--mobile-complect-standart-instal {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 12px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    padding: 10px;
+    margin-bottom: 53px;
+    max-width: 244px;
+}
+.tariff-complects--mobile-complect-standart-instal {
+    opacity: 0.5;
+}
+.tariff-complects--mobile-complect-base-instal__desc, .tariff-complects--mobile-complect-standart-instal__desc {
+    margin-right: 40px;
+    color: #000;
+    font-size: 14px;
+}
+.tariff-complects--mobile-complect-base-instal__price, .tariff-complects--mobile-complect-standart-instal__price {
+    color: #C61508;
+}
+
+
+.tariff-complects--mobile {
+    display: none;
+}
+
 /* questions */
 
 .questions {
@@ -1506,6 +1633,7 @@ main {
     border-radius: 30px;
     padding: 20px 0px 60px 71px;
     max-width: 1246px;
+    max-height: 458px;
     /* min-height: 432px; */
     transform: translateX(120px);
     z-index: 1;
@@ -1514,7 +1642,8 @@ main {
     position: absolute;
     max-width: 320px;
     bottom: 0;
-    transform: translate(160px, -200px);
+    transform: translateY(-200px);
+    left: 00px;
     z-index: 1;
 }
 .questions__autor {
@@ -1751,6 +1880,9 @@ input[type="checkbox"]:disabled + label:before {
     color: #C61508;
     border-bottom: 1px solid #C61508;
     transition: all 0.1s ease;
+}
+.questions__autor--mobile {
+    display: none;
 }
 
 /* adaptive */
@@ -2699,12 +2831,161 @@ input[type="checkbox"]:disabled + label:before {
 
 /* tariff */
 
-
-
-
+@media (max-width: 1519px) {
+    .tariff-complects-includes__desc {
+        max-width: 400px;
+    }
+}
+@media (max-width: 1440px) {
+    .tariff__title-top {
+        font-size: 42px;
+    }
+    .tariff__title-bottom {
+        font-size: 36px;
+    }
+}
+@media (max-width: 1399px) {
+    .tariff-complects-complect {
+        transform: translate(-100px, 500px);
+    }
+}
+@media (max-width: 1199px) {
+    .tariff__title-top {
+        font-size: 34px;
+    }
+    .tariff__title-bottom {
+        font-size: 28px;
+    }
+    .tariff-bottom__img {
+        display: none;
+    }
+    .tariff-complects-complect {
+        display: none;
+    }
+    .tariff-complects {
+        display: none;
+    }
+    .tariff-complects--mobile {
+        display: block;
+    }
+    .tariff-complects-complect-base-instal, .tariff-complects-complect-standart-instal {
+        max-width: 271px;
+    }
+}
+@media (max-width: 767px) {
+    .tariff__popcorn {
+        display: none;
+    }
+    .tariff-complects--mobile-complect-base, .tariff-complects--mobile-complect-standart {
+        max-width: 320px;
+        min-width: 320px;
+        height: 819px;
+    }
+    .tariff-complects--mobile-complect {
+        justify-content: start;
+    }
+}
+@media (max-width: 669px) {
+    .tariff-complects--mobile-complect {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tariff-complects--mobile-complect-base {
+        margin-bottom: 13px;
+    }
+    .tariff-complects--mobile-complect-standart {
+        margin-left: 0;
+    }
+}
 /* questions */
 
+@media (max-width: 1669px) {
+    .questions__autor {
+        max-width: 600px;
+    }
+}
 
-
+@media (max-width: 1440px) {
+    .questions__title {
+        font-size: 42px;
+    }
+    .questions-card__brain {
+        display: none;
+    }
+    .questions__autor {
+        display: none;
+    }
+    .questions-card-content__title {
+        font-size: 42px;
+    }
+    .questions__autor--mobile {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-height: 458px;
+    }
+}
+@media (max-width: 1199px) {
+    .questions__title {
+        font-size: 34px;
+    }
+    .questions-card-content__title {
+        font-size: 34px;
+    }
+    .questions-card-content__desc {
+        max-width: 525px;
+    }
+}
+@media (max-width: 991px) {
+    .questions-card-content__desc {
+        max-width: 425px;
+    }
+    .questions__autor--mobile {
+        max-height: 400px;
+    }
+    .questions-card {
+        min-height: 558px;
+    }
+}
+@media (max-width: 767px) {
+    .questions__autor--mobile {
+        right: 20%;
+    }
+    .questions-card-content-button {
+        margin-top: -100px;
+    }
+    .questions-card {
+        min-height: 858px;
+        max-width: 516px;
+        margin-left: -100px;
+    }
+}
+@media (max-width: 554px) {
+    .questions-card-content, .questions-card-content__desc, .questions-card-content-button {
+        max-width: 320px;
+    }
+    .questions-card {
+        padding: 20px 0px 0px 15px;
+        max-width: 335px;
+        min-height: 958px;
+    }
+    .questions__autor--mobile {
+        right: 0;
+    }
+    .questions-card-content-button {
+        padding: 30px 59px;
+    }
+}
+@media (max-width: 380px) {
+    .questions-card-content__title {
+        margin-left: 50px;
+    }
+    .questions-card {
+        margin-left: -131px;
+        padding: 20px 0px 0px 0px;
+    }
+}
 
 /* morequests */
+
