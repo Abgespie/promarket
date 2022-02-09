@@ -33,6 +33,13 @@ main {
     linear-gradient(101.96deg, rgba(31, 43, 75, 0.2) 67.96%, #050A15 87.96%), 
     linear-gradient(139.19deg, #2B0300 63.14%, #270401 85.73%);
 }
+img {
+    pointer-events: none;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
 .body--nonscroll {
     overflow: hidden;
     transition: all 0.6s ease;
@@ -73,8 +80,8 @@ main {
     border-radius: 15px;
 
     opacity: 1;
-    padding: 40px 34px;
-    max-height: 620px;
+    padding: 10px 34px;
+    max-height: 640px;
 }
 .call-box__title--upper {
     font-style: normal;
@@ -115,12 +122,36 @@ main {
     color: #FFFFFF;
 }
 .call-close {
-    position: absolute;
+    position: relative;
     z-index: 100;
-    top: -40px;
-    right: -40px;
     cursor: pointer;
     transition: all 0.6s ease;
+}
+.call-close::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -60px;
+    right: -60px;
+    border-top: 2px solid #fff;
+    transform: rotate(135deg);
+    transition: 0.6s all ease;
+}
+.call-close:hover:before, .call-close:hover:after {
+    border-top: 2px solid #C61508;
+    transition: 0.6s all ease;
+}
+.call-close::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -40px;
+    right: -60px;
+    border-top: 2px solid #fff;
+    transform: rotate(45deg);
+    transition: 0.6s all ease;
 }
 .call-box-choises {
     display: flex;
@@ -128,11 +159,22 @@ main {
     flex-direction: row;
     justify-content: space-between;
 }
+.call-box-choises--hidden {
+    display: none;
+}
 .call-box-choises-phone {
     border: 1px solid #FF9900;
     box-shadow: 0px 10px 25px rgba(255, 153, 0, 0.3), inset 0px -15px 20px rgba(202, 223, 255, 0.15);
     border-radius: 12px;
     padding: 20px 40px;
+    cursor: pointer;
+}
+.call-box-choises-phone--chosen {
+    background: #FF9900;
+    box-shadow: 0px 10px 25px rgba(255, 153, 0, 0.3), inset 0px -15px 20px rgba(202, 223, 255, 0.15);
+    border-radius: 12px;
+    padding: 20px 40px;
+    cursor: pointer;
 }
 .call-box-choises-telegram {
     border: 1px solid #0088CC;
@@ -141,6 +183,14 @@ main {
     filter: drop-shadow(0px 10px 25px rgba(0, 136, 204, 0.3));
     border-radius: 12px;
     padding: 20px 40px;
+    cursor: pointer;
+}
+.call-box-choises-telegram--chosen {
+    background: #0088CC;
+    box-shadow: 0px 10px 25px rgba(0, 136, 204, 0.3), inset 0px -15px 20px rgba(202, 223, 255, 0.15);
+    border-radius: 12px;
+    padding: 20px 40px;
+    cursor: pointer;
 }
 .call-box-choises-whatsup {
     border: 1px solid #43D854;
@@ -149,11 +199,21 @@ main {
     filter: drop-shadow(0px 10px 25px rgba(67, 216, 84, 0.3));
     border-radius: 12px;
     padding: 20px 40px;
+    cursor: pointer;
 }
-.call-box-choises-phone--img {
-    
+.call-box-choises-whatsup--chosen {
+    background: #43D854;
+    box-shadow: 0px 10px 25px rgba(67, 216, 84, 0.3), inset 0px -15px 20px rgba(202, 223, 255, 0.15);
+    border-radius: 12px;
+    padding: 20px 40px;
+    cursor: pointer;
 }
-.call-box__form {
+.call-box-choises-phone--img, .call-box-choises-phone--img--chosen,
+.call-box-choises-telegram--img--chosen, .call-box-choises-whatsup--img--chosen {
+    width: 32px;
+    height: 32px;
+}
+.call-box__input {
     width: 100%;
     height: 74px;
     background: rgba(255, 255, 255, 0.05);
@@ -161,8 +221,55 @@ main {
     box-sizing: border-box;
     border-radius: 12px;
     margin-top: 20px;
+    padding: 15px;
+    color: #fff;
 }
-
+.call-box-inputs {
+    display: flex;
+    flex-direction: column;
+}
+.call-box-policy {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.call-box-policy__check {
+    cursor: pointer;
+}
+.call-box-policy__check--img, .call-box-policy__check--img--checked {
+    transform: translateY(2px);
+}
+.call-box-policy__check--img--nonvisible {
+    display: none;
+}
+.call-box-button {
+    position: relative;
+    z-index: 4;
+    margin-top: 69px;
+    background: linear-gradient(180deg, #C61508 0%, #C61508 0.01%, #940606 100%);
+    box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
+    border-radius: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    transition: all 0.6s ease;
+    margin-top: 20px;
+}
+.call-box-button:hover {
+    transition: all 0.6s ease;
+    box-shadow: none;
+}
+.call-box-button__text {
+    display: block;
+    padding: 30px 100px 30px 100px;
+}
 
 
 
@@ -203,6 +310,7 @@ main {
     z-index: 10;
     top: 17%;
     left: 54%;
+    z-index: 1;
 }
 .header-top {
     display: flex;
@@ -1941,44 +2049,6 @@ main {
 .morequests-content-policy__check {
     transform: translateY(2px);
     margin-right: 5px; 
-}
-input[type="checkbox"] {
-    display: none;
-}
-label {
-    color: #fff;
-    cursor: pointer;
-    font-weight: normal;
-    line-height: 13px;
-    vertical-align: middle;
-}
-label:before {
-    content: " ";
-    color: #fff;
-    display: inline-block;
-    margin-right: 5px;
-    font-size: 10px;
-    position: relative;
-    text-align: center;
-    text-indent: 0px;
-    width: 13px;
-    height: 13px;
-    padding-left: 1px;
-    background: #C61508;
-    border-image: initial;
-    vertical-align: middle;
-    border-radius: 3px;
-    transform: translateY(-2px);
-}
-input[type="checkbox"]:checked + label:before {
-    content: "✔";
-    background: #C61508;
-    color: #fff;
-}
-input[type="checkbox"]:disabled + label:before {
-    content: " ";
-    background: #C61508;
-    color: #fff;
 }
 .morequests-content-policy--underlined {
     border-bottom: 1px solid #000;

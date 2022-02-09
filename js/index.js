@@ -267,7 +267,58 @@ $(".header-top-right__order").on("click", function() {
     $('body').addClass("body--nonscroll");
     $('.call').removeClass("call--hidden");
     });
-    $(".call-close").on("click", function() {
-        $('body').removeClass("body--nonscroll");
-        $('.call').addClass("call--hidden");
-        });
+$(".call-close").on("click", function() {
+    $('body').removeClass("body--nonscroll");
+    $('.call').addClass("call--hidden");
+    });
+
+$(".call-box-policy__check").on("click", function() {
+    $('.call-box-policy__check--img').toggleClass('call-box-policy__check--img--nonvisible');
+    $('.call-box-policy__check--img--checked').toggleClass('call-box-policy__check--img--nonvisible');
+    $('call-box-policy__check').toggleClass('policy-is-accepted');
+
+});
+
+$(".call-box-choises--variant").on("click", function(e) {
+    let oncl = e.target.id;
+    if(oncl != "variant-11" && e.target.id != "variant-22" && e.target.id != "variant-33") {
+        let chid = document.getElementsByClassName("call-box-choises--chosen")[0].id;
+        switch (chid) {
+            case "variant-11":
+                $("#variant-11").toggleClass("call-box-choises--hidden");
+                $("#variant-11").toggleClass("call-box-choises--chosen");
+                $("#variant-01").toggleClass("call-box-choises--hidden");
+                break;
+            case "variant-22":
+                $("#variant-22").toggleClass("call-box-choises--hidden");
+                $("#variant-22").toggleClass("call-box-choises--chosen");
+                $("#variant-02").toggleClass("call-box-choises--hidden");
+                break;
+            case "variant-33":
+                $("#variant-33").toggleClass("call-box-choises--hidden");
+                $("#variant-33").toggleClass("call-box-choises--chosen");
+                $("#variant-03").toggleClass("call-box-choises--hidden");
+                break;
+        }
+        switch (oncl) {
+            case "variant-01":
+                $(oncl).toggleClass("call-box-choises--hidden");
+                $("#variant-01").toggleClass("call-box-choises--hidden");
+                $("#variant-11").toggleClass("call-box-choises--hidden");
+                $("#variant-11").toggleClass("call-box-choises--chosen");
+                break;
+            case "variant-02":
+                $(oncl).toggleClass("call-box-choises--hidden");
+                $("#variant-02").toggleClass("call-box-choises--hidden");
+                $("#variant-22").toggleClass("call-box-choises--hidden");
+                $("#variant-22").toggleClass("call-box-choises--chosen");
+                break;
+            case "variant-03":
+                $(oncl).toggleClass("call-box-choises--hidden");
+                $("#variant-03").toggleClass("call-box-choises--hidden");
+                $("#variant-33").toggleClass("call-box-choises--hidden");
+                $("#variant-33").toggleClass("call-box-choises--chosen");
+                break;
+        }
+    }
+});

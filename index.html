@@ -18,7 +18,9 @@
         <div class="call call--hidden">
             <div class="call-bg"></div>
             <div class="call-box">
-                <img src="img/call/close.svg" alt="крестик" class="call-close">
+                <div class="call-close">
+                    
+                </div>
                 <h1 class="call-box__title--upper">
                     заказать звонок
                 </h1>
@@ -30,25 +32,39 @@
                     выберите удобный для вас канал связи:
                 </p>
                 <div class="call-box-choises">
-                    <div class="call-box-choises-phone">
-                        <img src="img/call/phone.svg" alt="телефон" class="call-box-choises-phone--img">
+                    <div class="call-box-choises-phone call-box-choises--variant call-box-choises--hidden" id="variant-01">
+                        <img src="img/call/phone.png" alt="телефон" class="call-box-choises-phone--img">
                     </div>
-                    <div class="call-box-choises-telegram">
+                    <div class="call-box-choises-phone--chosen call-box-choises--chosen call-box-choises--variant" id="variant-11">
+                        <img src="img/call/phone--chosen.svg" alt="телефон" class="call-box-choises-phone--img--chosen">
+                    </div>
+                    <div class="call-box-choises-telegram call-box-choises--variant" id="variant-02">
                         <img src="img/call/telegram.svg" alt="телеграм" class="call-box-choises-telegram--img">
                     </div>
-                    <div class="call-box-choises-whatsup">
+                    <div class="call-box-choises-telegram--chosen call-box-choises--hidden" id="variant-22">
+                        <img src="img/call/telegram--chosen.png" alt="телеграм" class="call-box-choises-telegram--img--chosen">
+                    </div>
+                    <div class="call-box-choises-whatsup call-box-choises--variant" id="variant-03">
                         <img src="img/call/whatsup.svg" alt="вотсап" class="call-box-choises-whatsup--img">
                     </div>
+                    <div class="call-box-choises-whatsup--chosen call-box-choises--hidden" id="variant-33">
+                        <img src="img/call/whatsup--chosen.png" alt="вотсап" class="call-box-choises-whatsup--img--chosen">
+                    </div>
                 </div>
-                <form action="" class="call-box__form call-box__form--name"></form>
-                <form action="" class="call-box__form call-box__form--number"></form>
+                <div class="call-box-inputs">
+                    <input type="text" placeholder="Ваше имя" class="call-box__input call-box__input--name">
+                    <input type="text" placeholder="+7(999) 999-99-99" class="call-box__input call-box__input--number">
+                </div>
                 <button class="call-box-button">
                     <span class="call-box-button__text">
                         заказать звонок
                     </span>
                 </button>
                 <p class="call-box-policy">
-                    <label for="" class="call-box-policy--check"></label>
+                    <span class="call-box-policy__check">
+                        <img src="img/call/checkbox.svg" alt="" class="call-box-policy__check--img">
+                        <img src="img/call/checkbox--checked.svg" alt="" class="call-box-policy__check--img--checked call-box-policy__check--img--nonvisible">
+                    </span>
                     Я согласен с политикой конфиденциальности
                 </p>
             </div>
@@ -1428,9 +1444,10 @@
                             </span>
                         </button>
                         <p class="morequests-content-policy">
-                            <label for="morequests-content-policy__check" class="morequests-content-policy__chec">
-                                <input type="checkbox" checked id="morequests-content-policy__check" class="morequests-content-policy__check">
-                            </label>
+                            <span class="call-box-policy__check">
+                                <img src="img/call/checkbox.svg" alt="" class="call-box-policy__check--img">
+                                <img src="img/call/checkbox--checked.svg" alt="" class="call-box-policy__check--img--checked call-box-policy__check--img--nonvisible">
+                            </span>
                             Я согласен с <a href="#" class="morequests-content-policy--underlined">политикой конфиденциальности</a>
                         </p>
                     </div>
