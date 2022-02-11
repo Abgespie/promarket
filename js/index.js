@@ -322,3 +322,27 @@ $(".call-box-choises--variant").on("click", function(e) {
         }
     }
 });
+
+// pay
+
+$(".pay-box-policy__check").on("click", function() {
+    $('.pay-box-policy__check--img').toggleClass('pay-box-policy__check--img--nonvisible');
+    $('.pay-box-policy__check--img--checked').toggleClass('pay-box-policy__check--img--nonvisible');
+    $('pay-box-policy__check').toggleClass('policy-is-accepted');
+
+});
+$(".pay-box-ofert__check").on("click", function() {
+    $('.pay-box-ofert__check--img').toggleClass('pay-box-ofert__check--img--nonvisible');
+    $('.pay-box-ofert__check--img--checked').toggleClass('pay-box-ofert__check--img--nonvisible');
+    $('pay-box-ofert__check').toggleClass('ofert-is-accepted');
+
+});
+
+$(".tariff-complects-complect-base-book-button").on("click", function() {
+    $('body').toggleClass("body--nonscroll");
+    $('.pay').toggleClass("pay--hidden");
+    });
+$(".pay-close").on("click", function() {
+    $('body').toggleClass("body--nonscroll");
+    $('.pay').toggleClass("pay--hidden");
+    });

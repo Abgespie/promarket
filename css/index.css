@@ -245,6 +245,17 @@ img {
 .call-box-policy__check--img--nonvisible {
     display: none;
 }
+.call-box-policy--underlined {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+.call-box-policy--underlined:hover {
+    color: #C61508;
+    border-bottom: 1px solid #C61508;
+    transition: all 0.1s ease;
+}
 .call-box-button {
     position: relative;
     z-index: 4;
@@ -271,7 +282,234 @@ img {
     padding: 30px 100px 30px 100px;
 }
 
+/* pay */
 
+.pay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease;
+
+}
+.pay-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    transition: all 0.6s ease;
+}
+.pay--hidden {
+    display: none;
+}
+.pay-box {
+    position: relative;
+    z-index: 2;
+    background: radial-gradient(62.22% 62.22% at 50% 0%, rgba(198, 21, 8, 0.2) 0%, rgba(198, 21, 8, 0) 100%), #121212;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    box-sizing: border-box;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+
+    opacity: 1;
+    padding: 10px 34px;
+    max-height: 700px;
+}
+.pay-box__title--upper {
+    font-style: normal;
+    font-weight: 999;
+    font-size: 42px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.pay-box__title--lower {
+    font-style: normal;
+    font-weight: 999;
+    font-size: 42px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -30px;
+    margin-bottom: -10px;
+
+    color: #C61508;
+}
+.pay-hr {
+    opacity: 0.1;
+    margin: 30px -35px;
+    max-width: 640px;
+    height: 0px;
+    border-top: 1px solid grey;
+}
+.pay-box__price {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+.pay-close {
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+.pay-close::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -60px;
+    right: -60px;
+    border-top: 2px solid #fff;
+    transform: rotate(135deg);
+    transition: 0.6s all ease;
+}
+.pay-close:hover:before, .pay-close:hover:after {
+    border-top: 2px solid #C61508;
+    transition: 0.6s all ease;
+}
+.pay-close::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -40px;
+    right: -60px;
+    border-top: 2px solid #fff;
+    transform: rotate(45deg);
+    transition: 0.6s all ease;
+}
+.pay-box__price--upper {
+    position: relative;
+    margin-left: 10px;
+}
+.pay-box__price--upper::before {
+    content: "36 900 ₽";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+.pay-box__price--upper::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 17px;
+    width: 65px;
+    height: 0;
+    border-top: 2px solid #F32A2A;
+    opacity: 1;
+}
+.pay-box__input {
+    width: 100%;
+    height: 74px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin-top: 20px;
+    padding: 15px;
+    color: #fff;
+}
+.pay-box-inputs {
+    display: flex;
+    flex-direction: column;
+}
+.pay-box-button {
+    position: relative;
+    z-index: 4;
+    margin-top: 69px;
+    background: linear-gradient(180deg, #C61508 0%, #C61508 0.01%, #940606 100%);
+    box-shadow: 0px 12px 40px rgba(198, 21, 8, 0.3), inset 0px -15px 20px rgba(111, 224, 158, 0.15);
+    border-radius: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    transition: all 0.6s ease;
+    margin-top: 20px;
+    min-width: 100%;
+}
+.pay-box-button:hover {
+    transition: all 0.6s ease;
+    box-shadow: none;
+}
+.pay-box-button__text {
+    display: block;
+    padding: 30px 100px;
+}
+.pay-box-policy {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.pay-box-policy-box {
+    margin-bottom: 10px;
+}
+.pay-box-policy__check {
+    cursor: pointer;
+}
+.pay-box-policy__check--img, .pay-box-policy__check--img--checked {
+    transform: translateY(2px);
+}
+.pay-box-policy__check--img--nonvisible {
+    display: none;
+}
+.pay-box-policy--underlined {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+.pay-box-policy--underlined:hover {
+    color: #C61508;
+    border-bottom: 1px solid #C61508;
+    transition: all 0.1s ease;
+}
+
+.pay-box-ofert__check {
+    cursor: pointer;
+}
+.pay-box-ofert__check--img, .pay-box-ofert__check--img--checked {
+    transform: translateY(2px);
+}
+.pay-box-ofert__check--img--nonvisible {
+    display: none;
+}
+.pay-box-ofert--underlined {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+.pay-box-ofert--underlined:hover {
+    color: #C61508;
+    border-bottom: 1px solid #C61508;
+    transition: all 0.1s ease;
+}
 
 /* header */
 
@@ -998,6 +1236,13 @@ img {
 .course-bullets {
     border-top: 1px solid #fff;
     max-width: 900px;
+}
+.course-bullets-el img {
+    pointer-events: all;
+    -moz-user-select: all; 
+    -webkit-user-select: all; 
+    -ms-user-select: all; 
+    user-select: all;
 }
 .course-bullets-el {
     border-bottom: 1px solid #fff;
@@ -1805,6 +2050,13 @@ img {
     text-transform: uppercase;
     /* margin-left: 5%; */
 }
+.questions-bullets-el img {
+    pointer-events: all;
+    -moz-user-select: all; 
+    -webkit-user-select: all; 
+    -ms-user-select: all; 
+    user-select: all;
+}
 .questions__title--green {
     color: #08C610;
 }
@@ -2091,6 +2343,132 @@ img {
 
 /* adaptive */
 
+
+/* call */
+
+@media (max-width: 1199px) {
+    .call-box__title--upper {
+        font-size: 34px;
+    }
+}
+@media (max-width: 537px) {
+    .call-close::before {
+        top: -15px;
+        right: -15px;
+    }
+    .call-close::after {
+        top: 5px;
+        right: -15px;
+    }
+}
+@media (max-width: 452px) {
+    .call-box-button__text {
+        padding: 30px 86px;
+    }
+    .call-box-choises-phone, .call-box-choises-phone--chosen, .call-box-choises-telegram, .call-box-choises-telegram--chosen,
+    .call-box-choises-whatsup, .call-box-choises-whatsup--chosen {
+        padding: 10px 20px;
+        max-height: 74px;
+    }
+}
+@media (max-width: 425px) {
+    .call-box {
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 380px) {
+    .call-box-button__text {
+        padding: 30px;
+    }
+    .call-box-button {
+        min-width: 100%;
+    }
+}
+@media (max-width: 345px) {
+    .call-box-policy {
+        font-size: 10px;
+    }
+}
+
+@media (max-height: 639px) {
+    .call-box__input {
+        max-height: 50px;
+    }
+    .call-box__title--upper {
+        margin-top: 0px;
+    }
+    .call-hr {
+        margin: 10px -35px;
+    }
+    .call-box-button__text  {
+        padding: 15px 30px;
+    }
+}
+@media (max-height: 705px) {
+    .call-close::before {
+        top: -15px;
+        right: -15px;
+    }
+    .call-close::after {
+        top: 5px;
+        right: -15px;
+    }
+}
+
+/* pay */
+
+@media (max-width: 1199px) {
+    .pay-box__title--upper {
+        font-size: 34px;
+    }
+    .pay-box__title--lower {
+        font-size: 32px;
+    }
+}
+@media (max-width: 537px) {
+    .pay-close::before {
+        top: -15px;
+        right: -15px;
+    }
+    .pay-close::after {
+        top: 5px;
+        right: -15px;
+    }
+}
+@media (max-width: 345px) {
+    .pay-box-policy {
+        font-size: 10px;
+    }
+}
+
+@media (max-height: 639px) {
+    .pay-box__input {
+        max-height: 50px;
+    }
+    .pay-box__title--upper {
+        margin-top: 0px;
+    }
+    .pay-hr {
+        margin: 10px -35px;
+    }
+    .pay-box-button__text  {
+        padding: 15px 30px;
+    }
+    .pay-hr {
+        margin: -10px -35px;
+    }
+}
+@media (max-height: 705px) {
+    .pay-close::before {
+        top: -15px;
+        right: -15px;
+    }
+    .pay-close::after {
+        top: 5px;
+        right: -15px;
+    }
+}
 
 /* header */
 
@@ -2569,7 +2947,6 @@ img {
         top: 17.5%;
     }
 }
-
 
 /* investcont */
 
